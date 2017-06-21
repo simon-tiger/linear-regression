@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Linear Regression</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+  <script src="sketch.js"></script>
+</head>
+<body>
+  <h1>Linear Regression</h1>
+  <p>
+    <p>This is a short interactive tutorial on linear regression.</p>
+    <h2>How It Works</h2>
+    <p>So if you have a dataset of points, we can plot that dataset.<br/>
+       Example: What if we have a dataset where the x-axis is temperature and the y-axis is ice cream sales:<br/>
+       <img src="fig1.jpg" width="400" /><br/>
+       So you know, for example, it was 24 degrees, and there were only 3 ice creams sold,
+       and on another day, it was 90 degrees, and there were 18 ice creams sold,
+       so you get the idea, you have a hole lot of points.<br/>
+       What linear regression seas is "Ok, tomorrow it's going to be 50 degrees. Could you gess how many ice creams you are going to sale?".<br/>
+       So the idea of a linear regression is to figure out: "how could we fit a line to this data?"</p>
+    <h2>The Algorithm</h2>
+    <p>So the formula for a line is typically written as: <code>y = mx + b</code>.<br/>
+       In statistics textbooks, you will see instead: <code>y = b0 + b1 * x</code>,<br/>
+       This is the same exact formula, <code>m</code> refers to <code>b1</code> and it
+       represents the "slope" and <code>b</code> refers to <code>b0</code> and it
+       represents the "y-intercept", which is where the line intersects the y-axis.<br/>
+       So the slope determines: "which way does the line point", and the y-intercept
+       determines: "where is that line relative to the y-axis".<br/>
+       Now, here is the formula:<br/>
+       <img src="formula1.png" /><br/>
+       X Bar is the mean or the average, or the sum of all of the x values divided by the total number of x values. And oviously, same thing for y bar.<br/>
+       This formula actually makes sense, because, let's say the formula for the line is just <code>y = x</code>.
+       Then the slope would be 1. Right? So you can see why this makes sense.
+     </p>
+    <hr/>
+
+    <p>Now let's take a look at a simple example of linear regression.</p>
+
+    <div><button id="reset">reset</button></div>
+  </p>
+</body>
+</html>
